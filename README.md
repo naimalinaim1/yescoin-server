@@ -1,1 +1,1 @@
-server link: https://botgame-server-bt1012.vercel.app/
+server link: https://yescoin-server-bt120s.vercel.app/
