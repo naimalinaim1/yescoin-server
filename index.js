@@ -12,19 +12,6 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const BOT_TOKEN = "7035599866:AAHbi9qXgMvDhHr1Xr_twD1nS3qzg8a3_RQ";
-
-const web_link = "https://yescoin.netlify.app/";
-const bot = new Telegraf(BOT_TOKEN);
-bot.start((ctx) =>
-  ctx.reply("Welcome", {
-    reply_markup: {
-      keyboard: [[{ text: "web app", web_app: { url: web_link } }]],
-    },
-  })
-);
-bot.launch();
-
 app.get("/", (req, res) => {
   res.send("Bot game server is running!");
 });
