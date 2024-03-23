@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import { ObjectId, MongoClient, ServerApiVersion } from "mongodb";
-import { Telegraf } from "telegraf";
 import dotenv from "dotenv";
 dotenv.config();
 
